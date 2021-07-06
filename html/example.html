@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>juli julian</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- -----------------------------font roboto condensed---------------------- -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <!-- ---------------------------own style sheet-------------------------- -->
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <!-- -----------fontawsom------------------------- -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+</head>
+
+<body class="fancy-body">
+    <h1 class="fancy">script effect</h1>
+    
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- ------------------------own java script-------------------------------- -->
+    <script type="text/javascript" src="../js/main.js"></script>
+</body>
+
+</html>
+
+
+// const nav-icon = document.querySelector(".nav-icons")
+
+const text = document.querySelector(".fancy");
+const txttxt = text.textContent;
+const splittxt = txttxt.split("");
+// console.log(splittxt);
+ text.textContent= "";
+for(let i=0; i<splittxt.length ; i++){
+    // console.log('i');
+    text.innerHTML += "<span>" + splittxt[i] + "</span>";
+}
+// console.log(text);
+
+
+// react===============================================
+
+//const test = () =>{
+//     return(
+//         <div>
+//             <h3>this is for test</h3>
+//             <input type="text"></input>
+//         </div>
+//         );
+// }
+// export default test;
+//     ////////////////////////////providing global scope \\\\\\\
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             person: [
+//                 { name: "raj", age: 45 },
+//                 { name: "raju", age: 47 },
+//                 { name: "sudha", age: 78 }
+//             ]};
+//         this.switchNameHandler = (changeName) => {
+//             // console.log('clicked');
+//             this.setState({
+//                 person: [
+//                     { name: changeName, age: 45 },
+//                     { name: "raju", age: 47 },
+//                     { name: "sudha", age: 8 }
+//                 ]
+//             });
+
+//             this.nameChangeHandler = (event) => {
+//                 this.setState({
+//                   person: [
+//                     { name: "raj", age: 45 },
+//                     { name: event.target.value, age: 47 },
+//                     { name: "sudha", age: 78 }
+//                 ]});
+
+//             };
+//         };
+//   };
+
+//     // this.switchNameHandler = this.switchNameHandler.bind(this);  
+    /////////////////////////// switchNameHandler///////////
+    // ========================react hook method optioan for component it is a functional component==
+
+    // using function component morden way to use 
+
+    // const App = (props) => {
+    //   const [personState , setPersonState] = useState({
+    //     person:[
+    //         {name:"raj" , age: 45},
+    //         {name:"raju" ,age:47},
+    //         {name:"sudha" , age:78}
+    //     ]});
+    //   const switchNameHandler = () =>{
+    //       // console.log('clicked');
+    //       setPersonState({
+    //       person:[
+    //           {name:"maxmilian" , age: 45},
+    //           {name:"raju" ,age:47},
+    //           {name:"sudha" , age:8}
+    //       ]});
+    //     };
+
+    // on change method ===========================================
+
+
+
+//     render() {
+//         return (
+//             <div className="App">
+//          <h1>this is from app.js from render function</h1>
+//          <button onClick = {this.switchNameHandler.bind(this,"neeraj barhi")}>change name</button>
+//          <Person 
+//          name = {this.state.person[0].name} 
+//          age= {this.state.person[0].age} >
+//          my hobbies<h1>cricket</h1><h3>football</h3>
+//          </Person>
+
+//          <Person 
+//          name = {this.state.person[1].name} 
+//          age={this.state.person[1].age}
+//          changed= {this.nameChangeHandler}>my hobbies
+//          </Person>
+
+//          <Person 
+//          name = {this.state.person[2].name} 
+//          age={this.state.person[2].age}
+//          click ={this.switchNameHandler}>
+//          <h1>my hobbies</h1>
+//          </Person>
+
+//      </div>
+//         );
+//         //return React.createElement('div',null ,createElement('h1' null , "this is from the createElement"));
+
+//     };
+// };
+
+
+/*===================================================exapmple================
+.fancy-body{
+    background-color: black;
+}
+.fancy{
+    background-color: black;
+    color: white;
+    
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 100vh;
+    margin: 50% 0 50% 0;
+}
+=======*/
